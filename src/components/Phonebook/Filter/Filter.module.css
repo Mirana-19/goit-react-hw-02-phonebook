@@ -1,0 +1,24 @@
+.form {
+  width: 540px;
+
+  margin: 0 auto 20px auto;
+  display: block;
+}
+
+.label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  width: 300px;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.input:focus,
+.input:hover {
+  outline: none;
+  border-color: #06f;
+  color: #06f;
+}
