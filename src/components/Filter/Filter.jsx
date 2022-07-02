@@ -4,7 +4,7 @@ import s from './Filter.module.css';
 function Filter({ handleInput, filter }) {
   return (
     <form className={s.form}>
-      <label className={s.label} htmlFor="filter">
+      <label className={s.label}>
         Find contacts by name
         <input
           className={s.input}

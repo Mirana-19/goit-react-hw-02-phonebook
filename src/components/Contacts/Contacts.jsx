@@ -15,9 +15,7 @@ function Contacts({ contacts, handleBtn }) {
               <button
                 className={s.button}
                 type="button"
-                onClick={() => {
-                  handleBtn(id);
-                }}
+                onClick={() => handleBtn(id)}
               >
                 Delete
               </button>

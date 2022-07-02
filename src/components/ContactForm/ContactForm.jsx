@@ -2,12 +2,12 @@ import { Component } from 'react';
 import PropTypes from 'prop-types';
 import s from './ContactForm.module.css';
 
-class ContactForm extends Component {
-  initialState = {
-    name: '',
-    number: '',
-  };
+const initialState = {
+  name: '',
+  number: '',
+};
 
+class ContactForm extends Component {
   state = {
     name: '',
     number: '',
@@ -23,7 +23,7 @@ class ContactForm extends Component {
     e.preventDefault();
 
     this.props.onSubmit(this.state);
-    this.setState(this.initialState);
+    this.setState(initialState);
   };
 
   render() {
@@ -32,7 +32,7 @@ class ContactForm extends Component {
 
     return (
       <form className={s.form} onSubmit={handleSubmit}>
-        <label className={s.label} htmlFor="name">
+        <label className={s.label}>
           Name
           <input
             className={s.input}
@@ -45,7 +45,7 @@ class ContactForm extends Component {
             value={name}
           />
         </label>
-        <label className={s.label} htmlFor="number">
+        <label className={s.label}>
           Number
           <input
             className={s.input}
